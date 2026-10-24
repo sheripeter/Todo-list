@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  margin: 0;
+  padding: 30px 16px;
+}
+.todo-app {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+}
+form {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+}
+
+button {
+  padding: 12px;
+  cursor: pointer;
+}
+
+li {
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+
+
+#todoList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#todoList span {
+  overflow-wrap: anywhere;
+}
+
+#todoList button {
+  flex-shrink: 0;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+#todoList button:hover {
+  background: #b91c1c;
+}
+
+#todoList li {
+  justify-content: flex-start;
+}
+
+#todoList li span {
+  flex: 1;
+}
+
+#todoList input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+#todoList .completed {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+#todoList .task-status {
+  flex: 0 0 auto;
+  font-size: 12px;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+#todoList .completed {
+  text-decoration: line-through;
+  color: #64748b;
+  
+}
+#taskCounter {
+  color: #475569;
+  font-size: 14px;
+  margin: 16px 0;
+}
