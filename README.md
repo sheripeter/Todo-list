@@ -37,7 +37,7 @@ A simple, responsive To-Do List application built with HTML, CSS, and JavaScript
 - Add task editing
 - Add task filters
 - Improve accessibility and responsive design
-
+- Add task due dates.
 ---
 
 Created as part of my beginner web development learning journey.
