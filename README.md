@@ -41,3 +41,4 @@ A simple, responsive To-Do List application built with HTML, CSS, and JavaScript
 ---
 
 Created as part of my beginner web development learning journey.
+Git practice: I can inspect and save project changes safely.
