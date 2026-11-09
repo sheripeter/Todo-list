@@ -6,7 +6,21 @@ const taskCounter = document.querySelector("#taskCounter");
 const totalCounter = document.querySelector("#totalCounter");
 
 // Load saved tasks
-let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+let tasks = [];
+
+try {
+    const savedTasks = localStorage.getItem("tasks");
+
+    tasks = savedTasks ? JSON.parse(savedTasks) : [];
+
+    if (!Array.isArray(tasks)) {
+        tasks = [];
+    }
+
+} catch (error) {
+    tasks = [];
+    console.error("Unable to load saved tasks:", error);
+}
 
 function saveTasks() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
